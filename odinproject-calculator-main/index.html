@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="css/reset.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <title>CalQ - Calculator App</title>
+</head>
+
+<body>
+  <header>
+    <nav></nav>
+  </header>
+  <main>
+    <section class="calculator">
+      <div class="calculator_display">
+        <input type="text" class="calculator_display_input" value="" disabled />
+      </div>
+      <div id="calculator-keys">
+        <button type="button" id="clear" class="calculator_key clear">AC</button>
+        <button type="button" id="percent" class="calculator_key operator">%</button>
+        <button type="button" id="divide" class="calculator_key operator">/</button>
+        <button type="button" id="multiply" class="calculator_key operator">*</button>
+        <button type="button" value="7" id="seven" class="calculator_key number">7</button>
+        <button type="button" value="8" id="eight" class="calculator_key number">8</button>
+        <button type="button" value="9" id="nine" class="calculator_key number">9</button>
+        <button type="button" id="subtract" class="calculator_key operator">-</button>
+        <button type="button" value="4" id="four" class="calculator_key number">4</button>
+        <button type="button" value="5" id="five" class="calculator_key number">5</button>
+        <button type="button" value="6" id="six" class="calculator_key number">6</button>
+        <button type="button" id="add" class="calculator_key operator">+</button>
+        <button type="button" value="1" id="one" class="calculator_key number">1</button>
+        <button type="button" value="2" id="two" class="calculator_key number">2</button>
+        <button type="button" value="3" id="three" class="calculator_key number">3</button>
+        <button type="button" id="equal" class="calculator_key operator">=</button>
+        <button type="button" value="0" id="zero" class="calculator_key number">0</button>
+        <button type="button" id="period" class="calculator_key">.</button>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <nav></nav>
+  </footer>
+  <script src="/Calculator/js/main.js"></script>
+</body>
+
+</html>

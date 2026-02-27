@@ -1,0 +1,107 @@
+/* General Form Styling */
+.form-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Fieldset Styling */
+fieldset {
+    border: none;
+    padding: 20px 0;
+}
+
+legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Label and Input Styling */
+.label-input-combo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+label {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+input,
+select,
+textarea {
+    font-size: 1rem;
+    padding: 8px 10px;
+    border: none;
+    border-bottom: 2px solid #999;
+    outline: none;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    border-bottom: 2px solid #333;
+}
+
+/* File Upload Styling */
+.imageInput {
+    border: none;
+}
+
+/* Buttons */
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-submit {
+    background-color: #333;
+    color: white;
+    border-radius: 4px;
+}
+
+.btn-reset {
+    background-color: #ccc;
+    color: black;
+    border-radius: 4px;
+}
+
+.btn-submit:hover {
+    background-color: #666;
+}
+
+.btn-reset:hover {
+    background-color: #999;
+}
+
+/* Checkbox Styling */
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    width: 16px;
+    height: 16px;
+}

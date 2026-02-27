@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Admin Dashboard</title>
+    <link rel="icon" href="/img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header id="header" role="banner">
+        <h2 id="user-name">Welcome, Morgan Oakley</h2>
+        <div class="navbar">
+            <nav class="main-navigation" role="navigation" aria-label="Main Menu">
+                <div class="button-group" role="group" aria-label="Action Buttons">
+                    <button type="button" class="button">New</button>
+                    <button type="button" class="button">Upload</button>
+                    <button type="button" class="button">Share</button>
+                </div>
+                <form action="/search" method="get" role="search" aria-label="Search the Website" class="search-form">
+                    <label for="site-search" class="visually-hidden"></label>
+                    <input type="search" id="site-search" name="q" placeholder="Search..." required>
+                    <button type="submit" aria-label="Submit Search">
+                        <img class="icon icon-search" src="/feather-icons/search.svg" alt="Search Icon">
+                    </button>
+                </form>
+                <button class="notification-button" aria-label="View Notifications">
+                    <img src="/feather-icons/bell.svg" alt="" aria-hidden="true" class="notification-icon">
+                    <span class="notification-badge" aria-hidden="true">5</span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <aside id="sidebar" role="complementary" aria-label="Sidebar">
+        <div class="sidebar-header">
+            <a href="/" class="sidebar-link header">Dashboard</a>
+        </div>
+        <nav class="sidebar-navigation" aria-label="Sidebar Navigation">
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <img class="icon icon-home" src="/feather-icons/home.svg" alt="Home Icon">
+                    <a href="#" class="sidebar-link">Home</a>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon icon-user" src="/feather-icons/user.svg" alt="User Icon">
+                    <a href="#" class="sidebar-link">Profile</a>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon icon-messages" src="/feather-icons/message-circle.svg" alt="Messages Icon">
+                    <a href="#" class="sidebar-link">Messages</a>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon icon-archive" src="/feather-icons/archive.svg" alt="Archive Icon">
+                    <a href="#" class="sidebar-link">History</a>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon icon-tasks" src="/feather-icons/activity.svg" alt="Tasks Icon">
+                    <a href="#" class="sidebar-link">Tasks</a>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon icon-communities" src="/feather-icons/users.svg" alt="Communities Icon">
+                    <a href="#" class="sidebar-link">Communities</a>
+                </li>
+            </ul>
+            <ul class="sidebar-list">
+                <li class="sidebar-item">
+                    <img class="icon icon-settings" src="/feather-icons/settings.svg" alt="Settings Icon">
+                    <a href="#" class="sidebar-link">Settings</a>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon icon-support" src="/feather-icons/message-square.svg" alt="Support Icon">
+                    <a href="#" class="sidebar-link">Support</a>
+                </li>
+                <li class="sidebar-item">
+                    <img class="icon icon-privacy" src="/feather-icons/lock.svg" alt="Privacy Icon">
+                    <a href="#" class="sidebar-link">Privacy</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main id="content">
+        <section id="projects">
+            <h2 class="section-header">Your Projects</h2>
+            <div id="projects-container">
+                <article class="card card-project">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae odio a
+                        lacus elementum bibendum ut ac ipsum.</p>
+                    <div class="card-icons">
+                        <img class="icon icon-star" src="/feather-icons/star.svg" alt="Star Icon">
+                        <img class="icon icon-eye" src="/feather-icons/eye.svg" alt="Eye Icon">
+                        <img class="icon icon-share" src="/feather-icons/share.svg" alt="Share Icon">
+                    </div>
+                </article>
+                <article class="card card-project">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae odio a
+                        lacus elementum bibendum ut ac ipsum.</p>
+                    <div class="card-icons">
+                        <img class="icon icon-star" src="/feather-icons/star.svg" alt="Star Icon">
+                        <img class="icon icon-eye" src="/feather-icons/eye.svg" alt="Eye Icon">
+                        <img class="icon icon-share" src="/feather-icons/share.svg" alt="Share Icon">
+                    </div>
+                </article>
+                <article class="card card-project">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae odio a
+                        lacus elementum bibendum ut ac ipsum.</p>
+                    <div class="card-icons">
+                        <img class="icon icon-star" src="/feather-icons/star.svg" alt="Star Icon">
+                        <img class="icon icon-eye" src="/feather-icons/eye.svg" alt="Eye Icon">
+                        <img class="icon icon-share" src="/feather-icons/share.svg" alt="Share Icon">
+                    </div>
+                </article>
+                <article class="card card-project">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae odio a
+                        lacus elementum bibendum ut ac ipsum.</p>
+                    <div class="card-icons">
+                        <img class="icon icon-star" src="/feather-icons/star.svg" alt="Star Icon">
+                        <img class="icon icon-eye" src="/feather-icons/eye.svg" alt="Eye Icon">
+                        <img class="icon icon-share" src="/feather-icons/share.svg" alt="Share Icon">
+                    </div>
+                </article>
+                <article class="card card-project">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae odio a
+                        lacus elementum bibendum ut ac ipsum.</p>
+                    <div class="card-icons">
+                        <img class="icon icon-star" src="/feather-icons/star.svg" alt="Star Icon">
+                        <img class="icon icon-eye" src="/feather-icons/eye.svg" alt="Eye Icon">
+                        <img class="icon icon-share" src="/feather-icons/share.svg" alt="Share Icon">
+                    </div>
+                </article>
+                <article class="card card-project">
+                    <h3 class="card-title">Lorem ipsum dolor sit amet</h3>
+                    <p class="card-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut vitae odio a
+                        lacus elementum bibendum ut ac ipsum.</p>
+                    <div class="card-icons">
+                        <img class="icon icon-star" src="/feather-icons/star.svg" alt="Star Icon">
+                        <img class="icon icon-eye" src="/feather-icons/eye.svg" alt="Eye Icon">
+                        <img class="icon icon-share" src="/feather-icons/share.svg" alt="Share Icon">
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section id="announcements">
+            <h2 class="section-header">Announcements</h2>
+            <div id="annoucements-container">
+                <article class="announcement">
+                    <h3 class="announcement-title">Site Maintenance</h3>
+                    <p class="announcement-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        nisl felis, convallis sit amet enim sed, tempor auctor magna.</p>
+                </article>
+                <hr>
+                <article class="announcement">
+                    <h3 class="announcement-title">Community Share Day</h3>
+                    <p class="announcement-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        nisl felis, convallis sit amet enim sed, tempor auctor magna.</p>
+                </article>
+                <hr>
+                <article class="announcement">
+                    <h3 class="announcement-title">Updated Privacy Policy</h3>
+                    <p class="announcement-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec
+                        nisl felis, convallis sit amet enim sed, tempor auctor magna.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="trending">
+            <h2 class="section-header">Trending</h2>
+            <div id="trending-container">
+                <div class="profile-cards">
+                    <article class="profile-card">
+                        <img src="/img/gent1.jpg" alt="User profile picture of @tegan" class="profile-image">
+                        <div class="profile-details">
+                            <p class="profile-card-name">@tegan</p>
+                            <p class="profile-card-title">World Peace Builder</p>
+                        </div>
+                    </article>
+                    <article class="profile-card">
+                        <img src="/img/lass1.jpg" alt="User profile picture of @morgan" class="profile-image">
+                        <div class="profile-details">
+                            <p class="profile-card-name">@morgan</p>
+                            <p class="profile-card-title">Super Cool Project</p>
+                        </div>
+                    </article>
+                    <article class="profile-card">
+                        <img src="/img/gent2.jpg" alt="User profile picture of @john" class="profile-image">
+                        <div class="profile-details">
+                            <p class="profile-card-name">@john</p>
+                            <p class="profile-card-title">Life Changing App</p>
+                        </div>
+                    </article>
+                    <article class="profile-card">
+                        <img src="/img/lass2.jpg" alt="User profile picture of @kendall" class="profile-image">
+                        <div class="profile-details">
+                            <p class="profile-card-name">@kendall</p>
+                            <p class="profile-card-title">No Traffic Maker</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

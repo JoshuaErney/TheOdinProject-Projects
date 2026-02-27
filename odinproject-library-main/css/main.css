@@ -1,0 +1,278 @@
+/* General Reset */
+* {
+    box-sizing: border-box;
+    font-family: "Raleway", serif;
+}
+
+body {
+    font-family: "Raleway", serif;
+    background-color: #fff;
+    color: #333;
+    line-height: 1.5;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    background-image: url(/img/background-image.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+header {
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+a,
+dialog {
+    color: #000;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.feather {
+    width: 18px;
+    height: 18px;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    fill: none;
+}
+
+.btn-group {
+    display: flex;
+    gap: 0.75rem;
+}
+
+/* Brand name styling */
+#brandName {
+    color: black;
+    font-size: 32px;
+    font-weight: 200;
+}
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+/* Button-like link styling */
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 0.5rem;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+button.nav-btn {
+    background-color: #000;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+button.nav-btn:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.nav-items {
+    display: flex;
+    gap: 1rem;
+}
+
+a.nav-link:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.75rem;
+}
+
+/* ---------------------------------------------------- */
+
+div.bookDisplay {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+div.section-header {
+    border-bottom: 1px solid #999;
+    margin: 1rem 0;
+}
+
+div.available-book-list,
+div.pending-book-list {
+    display: flex;
+    gap: 2rem;
+}
+
+div.book-card {
+    width: 240px;
+    height: 400px;
+    position: relative;
+}
+
+img#book-img {
+    max-width: 100%;
+    object-position: center;
+    object-fit: fill;
+    border: 1px solid transparent;
+    border-radius: 2px 16px 16px 2px;
+}
+
+div.book-actions {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+button.btn-details {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    display: flex;
+    gap: 0.25rem;
+    font-size: 12px;
+}
+
+div.flex-container {
+    display: flex;
+    gap: 1rem;
+}
+
+div.card {
+    padding: 10px 15px;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+/* ---------------------------------------------------- */
+
+/* Dialog styling */
+
+dialog {
+    gap: 1rem;
+    padding: 20px;
+    background-color: #f9f9f9;
+    /* Light gray background */
+    border: 1px solid #e0e0e0;
+    /* Subtle border */
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    /* Soft shadow */
+    width: 600px;
+    transition: transform 0.2s ease-in-out;
+}
+
+dialog>form,
+fieldset.book-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+dialog fieldset {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    grid-column: 1;
+    grid-row: span 1;
+}
+
+dialog legend {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #555;
+    padding: 0 5px;
+}
+
+dialog label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+/* Style for <small> elements */
+form .form-description {
+    font-size: 0.875rem;
+    color: #6c757d;
+    display: block;
+}
+
+div.label-input-combo {
+    margin-top: 1rem;
+}
+
+dialog input,
+dialog textarea,
+dialog select {
+    width: 100%;
+    padding: 10px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fafafa;
+    color: #333;
+}
+
+dialog input:focus,
+dialog textarea:focus,
+dialog select:focus {
+    outline: none;
+    border-color: #000;
+    background-color: #fff;
+}
+
+dialog .btn-group {
+    margin-bottom: 1rem;
+}
+
+dialog .btn-group button {
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Style for the submit button */
+dialog .btn-group button[type="submit"] {
+    flex: 7;
+    background-color: black;
+}
+
+/* Style for the cancel button */
+dialog .btn-group button[type="cancel"] {
+    flex: 3;
+    background-color: gray;
+}
+
+/* Add hover effects for buttons */
+dialog .btn-group button[type="submit"]:hover,
+dialog .btn-group button[type="cancel"]:hover {
+    opacity: 0.8;
+}

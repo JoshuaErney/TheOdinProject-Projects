@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/main.css">
+
+    <title>Odin Project: Sign-Up Form</title>
+</head>
+
+<body>
+    <main>
+        <img src="/img/background-side-image.png">
+
+        <div id="form-container">
+            <div id="text-container">
+                <h1>Welcome to The Odin Project</h1>
+                <h2>Your pathway to mastering web development and achieving your goals.</h2>
+                <p>Join a community of learners dedicated to building real-world skills and creating meaningful
+                    projects. Sign up below to begin your journey toward a rewarding career in tech.</p>
+            </div>
+            <form action="" method="post">
+                <div>
+                    <label for="first-name">First Name:</label>
+                    <input type="text" id="first-name" name="first_name" required aria-required="true" required
+                        aria-label="First Name" placeholder="John" title="First name should only contain letters.">
+                </div>
+
+                <div>
+                    <label for="last-name">Last Name:</label>
+                    <input type="text" id="last-name" name="last_name" required aria-required="true" required
+                        aria-label="Last Name" placeholder="Smith" title="Last name should only contain letters.">
+                </div>
+
+                <div>
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required aria-required="true" aria-label="Email Address"
+                        placeholder="example@odinproject.com" required
+                        title="Enter a valid email address (e.g., example@domain.com).">
+                </div>
+
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required aria-required="true" aria-label="Phone Number"
+                        placeholder="123-456-7890" minlength="10" maxlength="12"
+                        title="Phone number should be between 10 to 15 digits and contain only numbers.">
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required aria-required="true" required
+                        aria-label="Password" minlength="8"
+                        title="Password must be at least 8 characters, include a letter, a number, and a special character.">
+                    <small id="password-help" aria-live="polite">
+                        Your password should be at least 8 characters long and include a mix of letters, numbers, and
+                        symbols.
+                    </small>
+                </div>
+
+                <div>
+                    <label for="confirm-password">Confirm Password:</label>
+                    <input type="password" id="confirm-password" name="confirm_password" required aria-required="true"
+                        required minlength="8" aria-label="Confirm Password" title="Passwords must match.">
+                    <small id="password-help" aria-live="polite">
+                        Please re-enter your password
+                    </small>
+                </div>
+
+                <div>
+                    <button type="submit" aria-label="Create Account">Create Account</button>
+                    <p>
+                        Already have an account?
+                        <a href="_blank" aria-label="Log in to your existing account">Log In</a>
+                    </p>
+                </div>
+            </form>
+        </div>
+    </main>
+    <!-- <footer>
+        Photo by <a
+            href="https://unsplash.com/@pawel_czerwinski?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Pawel
+            Czerwinski</a> on <a
+            href="https://unsplash.com/photos/a-close-up-of-some-white-curtains-aLzba-WgWWU?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+        <br />
+        Photo by <a
+            href="https://unsplash.com/@ofspace?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Ofspace
+            LLC</a> on <a
+            href="https://unsplash.com/photos/a-man-with-glasses-standing-in-front-of-a-blue-background-mIgJpximElQ?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+    </footer> -->
+</body>
+
+</html>
